@@ -1,6 +1,6 @@
-pkgbase = bootsplash-theme-manjaro-glitch
-	pkgdesc = Simple Manjaro Bootsplash with cool glitch effect
-	pkgver = 1.0
+pkgbase = bootsplash-theme-sakura
+	pkgdesc = Simple Bootsplash Sakura Theme
+	pkgver = 2.0
 	pkgrel = 1
 	arch = x86_64
 	license = GPL
@@ -8,16 +8,14 @@ pkgbase = bootsplash-theme-manjaro-glitch
 	options = !libtool
 	options = !emptydirs
 	source = bootsplash-packer
-	source = bootsplash-manjaro-glitch.sh
-	source = bootsplash-manjaro-glitch.initcpio_install
+	source = bootsplash-sakura.sh
+	source = bootsplash-sakura.initcpio_install
 	source = logo.gif
-	source = spinner.gif
-	sha256sums = SKIP
-	sha256sums = SKIP
-	sha256sums = SKIP
-	sha256sums = SKIP
-	sha256sums = SKIP
+	sha256sums = 51559d3ccfb448b03fa6439faf5869dbd0c2fbda1b5d5bf5d4ba70e60937472a
+	sha256sums = 9d6656f2882f9805cd38f3f4b73ff91dabb9713823ac94bf8789719f00347a40
+	sha256sums = 576feb026d57cf4d2064e0a8651fc876047422580c39ab4bce5df7693f50f711
+	sha256sums = f29c2daaa77d1be271a5bbbf1f0174855b002f37048bfe514b023968c3b4eb83
 
-pkgname = bootsplash-theme-manjaro-glitch
-	pkgdesc = Simple Manjaro Bootsplash with cool glitch effect
+pkgname = bootsplash-theme-sakura
+	pkgdesc = Bootsplash with cool sakura tree
 

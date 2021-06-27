@@ -1,6 +1,6 @@
 build() {
         # add manjaro glitch bootsplash
-	add_binary /usr/lib/firmware/bootsplash-themes/manjaro-glitch/bootsplash /usr/lib/firmware/bootsplash-themes/manjaro-glitch/bootsplash
+	add_binary /usr/lib/firmware/bootsplash-themes/sakura/bootsplash /usr/lib/firmware/bootsplash-themes/sakura/bootsplash
 }
 
 help() {
