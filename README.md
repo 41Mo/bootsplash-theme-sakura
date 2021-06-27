@@ -1,5 +1,5 @@
 # Description
-Bootsplash theme for Manjaro Linux. 
+Bootsplash theme
 
 # Installation & configuration
 

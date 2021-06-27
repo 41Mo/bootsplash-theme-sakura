@@ -1,4 +1,4 @@
-# Maintainer: Andrey Alekseev <andrey.android7890@gmail.com>
+# Maintainer: Molchanov Alexandr <amol4anov@mail.ru>
 
 pkgname=('bootsplash-theme-sakura')
 pkgver=2.0
