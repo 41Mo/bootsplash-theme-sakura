@@ -5,22 +5,38 @@ Bootsplash theme
 
 ## Automatic method:
 If you want to use automatic gui manager look at: [bootsplash-manager](`https://github.com/ANDRoid7890/bootsplash-manager`)
+```bash 
+$ pacman -Sy bootsplash-manager
+...
+$ pacman -S bootsplash-theme-sakura-git
+...
+$ bootsplash-manager -l
+Found 4 themes:
+arch
+manjaro
+manjaro-glitch
+sakura
+$ sudo bootsplash-manager -s sakura
+$ sudo bootsplash-manager --status
+Bootsplash status:
+[ ok ] Bootsplash is enabled, current theme: sakura
+[ ok ] Current kernel supports bootsplash
+[ ok ] current theme is in hooks list
+[ ok ] No 'quiet' option
+```
 
 ## Manual installation:
-1. `git clone https://github.com/LinAnsty/bootsplash-theme-sakura`
+```bash
+ $ git clone https://github.com/LinAnsty/bootsplash-theme-sakura`
+ $ cd bootsplash-theme-sakura`
+ $ chmod +x bootsplash-packer bootsplash-theme-sakura.sh
+ $ makepkg -Ci
+```
+ Append `bootsplash-theme-sakura` hook in the end of `HOOKS` string of /etc/mkinitcpio.conf
 
-2. `cd bootsplash-theme-sakura`
+ Add `bootsplash.bootfile=bootsplash-themes/sakura/bootsplash` into `GRUB_CMDLINE_LINUX` string of `/etc/default/grub`
 
-3. Run `chmod +x bootsplash-packer bootsplash-theme-sakura.sh`
-
-4. Run `makepkg -Ci`
-
-5. Append `bootsplash-theme-sakura` hook in the end of `HOOKS` string of /etc/mkinitcpio.conf
-
-6. Add `bootsplash.bootfile=bootsplash-themes/sakura/bootsplash` into `GRUB_CMDLINE_LINUX` string of `/etc/default/grub`
-
-7. Run `sudo mkinitcpio -P && sudo update-grub` to update initial ram disk and grub configuration
-
+ Run `sudo mkinitcpio -P && sudo update-grub` to update initial ram disk and grub configuration
 
 # Some hints
 
@@ -28,7 +44,7 @@ The end result may vary on different configurations. For instance, it may be a g
 
 `# efibootmgr -c -d /dev/sda -p 1 -L "Manjaro Linux 5.4" -l /vmlinuz-5.4-x86_64 -u 'ro initrd=\intel-ucode.img initrd=\initramfs-5.4-x86_64.img bootsplash.bootfile=bootsplash-themes/sakura/bootsplash <other options like cryptdevice, root, resume etc>' -v`
 
-# Making sutable gif for boot screen
+## Making sutable gif for boot screen
 
 All frames in gif should be the same size to check this run `# identify name.gif`
 
