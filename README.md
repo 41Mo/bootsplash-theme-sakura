@@ -3,23 +3,23 @@ Bootsplash theme for Manjaro Linux.
 
 # Installation & configuration
 
-Automatic method:
-see bootsplash-manager :`https://github.com/ANDRoid7890/bootsplash-manager`
+## Automatic method:
+If you want to use automatic gui manager look at: [bootsplash-manager](`https://github.com/ANDRoid7890/bootsplash-manager`)
 
-Manual installation:
-`git clone https://github.com/ANDRoid7890/bootsplash-theme-manjaro-glitch.git`
+## Manual installation:
+1. `git clone https://github.com/LinAnsty/bootsplash-theme-sakura`
 
-`cd bootsplash-theme-sakura`
+2. `cd bootsplash-theme-sakura`
 
-Run `chmod +x bootsplash-packer bootsplash-theme-sakura.sh`
+3. Run `chmod +x bootsplash-packer bootsplash-theme-sakura.sh`
 
-Run `makepkg -Ci`
+4. Run `makepkg -Ci`
 
-Append `bootsplash-theme-sakura` hook in the end of `HOOKS` string of /etc/mkinitcpio.conf
+5. Append `bootsplash-theme-sakura` hook in the end of `HOOKS` string of /etc/mkinitcpio.conf
 
-Add `bootsplash.bootfile=bootsplash-themes/sakura/bootsplash` into `GRUB_CMDLINE_LINUX` string of `/etc/default/grub`
+6. Add `bootsplash.bootfile=bootsplash-themes/sakura/bootsplash` into `GRUB_CMDLINE_LINUX` string of `/etc/default/grub`
 
-Run `sudo mkinitcpio -P && sudo update-grub` to update initial ram disk and grub configuration
+7. Run `sudo mkinitcpio -P && sudo update-grub` to update initial ram disk and grub configuration
 
 
 # Some hints
@@ -43,5 +43,5 @@ With this method all blobs of logo.gif already the same lengthh and size
 
 `convert test.gif -gravity Center -crop 300x300+0 out.gif`
 
-# Original picture taken from
+# Original picture taken from kde store
 https://store.kde.org/p/1433200
