@@ -27,7 +27,7 @@ Bootsplash status:
 
 ## Manual installation:
 ```bash
- $ git clone https://github.com/LinAnsty/bootsplash-theme-sakura`
+ $ git clone https://github.com/LinAnsty/bootsplash-theme-sakura
  $ cd bootsplash-theme-sakura`
  $ chmod +x bootsplash-packer bootsplash-theme-sakura.sh
  $ makepkg -Ci
