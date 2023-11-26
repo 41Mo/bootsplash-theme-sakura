@@ -29,8 +29,7 @@ Bootsplash status:
 ```bash
  $ git clone https://github.com/LinAnsty/bootsplash-theme-sakura
  $ cd bootsplash-theme-sakura`
- $ chmod +x bootsplash-packer bootsplash-theme-sakura.sh
- $ makepkg -Ci
+ $ makepkg -Csri
 ```
  Append `bootsplash-theme-sakura` hook in the end of `HOOKS` string of /etc/mkinitcpio.conf
 
