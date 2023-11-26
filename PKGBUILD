@@ -8,7 +8,7 @@ pkgdesc="Simple Bootsplash Sakura Theme"
 license=('GPL')
 depends=()
 optdepends=('bootsplash-systemd: for bootsplash functionality')
-builddepends=('imagemagick')
+makedepends=('imagemagick')
 options=('!libtool' '!emptydirs')
 
 source=('bootsplash-packer'
